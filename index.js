@@ -28,6 +28,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Add your functions below:
 
 const validateCred = (num) => {
+  let dropLastDigit2l
   let dropLastDigit = num.slice(0, -1);
   dropLastDigit.reverse();
   console.log(dropLastDigit);
@@ -35,14 +36,13 @@ const validateCred = (num) => {
     if(dropLastDigit[i] % 2 === 0){
       let dropLastDigit2 = (dropLastDigit[i] * 2);
       console.log(dropLastDigit2);
+      
     }
-  }
+    
+  } //console.log(dropLastDigit2);
 
+return;
 };
 
 
-validateCred(mystery5); 
-
-
-
-
+console.log(validateCred(mystery5)); 
