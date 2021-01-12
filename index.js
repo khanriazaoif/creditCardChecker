@@ -50,14 +50,15 @@ const validateCred = (num) => {
       num[i] *= 2;
       if (num[i] > 9) {
         num[i] -= 9;
-        // console.log(`cl 54`, dropLastDigit);
       }
     }
-  } 
-  let test = num.reduce((accumulator, currentValue) => accumulator + currentValue);
+  }
+  let test = num.reduce(
+    (accumulator, currentValue) => accumulator + currentValue
+  );
   test += dropLastDigit;
-if(test % 10 === 0){
-} else {
-}
+  if (test % 10 === 0) {
+  } else {
+  }
   return;
 };
